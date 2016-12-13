@@ -1,6 +1,11 @@
 /*
  * Copyright IBM Corp. 2015
  */
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 #include <sys/types.h>
 
 /* Portable implementations of CRC-32 (IEEE and Castagnoli), both
@@ -16,3 +21,7 @@ unsigned int crc32_be_vx(unsigned int, const unsigned char *, size_t);
 unsigned int crc32_le_vx(unsigned int, const unsigned char *, size_t);
 unsigned int crc32c_be_vx(unsigned int, const unsigned char *, size_t);
 unsigned int crc32c_le_vx(unsigned int, const unsigned char *, size_t);
+
+#ifdef __cplusplus
+}
+#endif
